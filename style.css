@@ -90,6 +90,7 @@ nav ul li {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
+  padding-bottom: 101px;
 }
 .circle {
   height: 350px;
@@ -101,9 +102,6 @@ nav ul li {
   text-align: center;
   margin-left: 55px;
   margin-top: 101px;
-}
-.box {
-  margin-left: -70px;
 }
 .circle img {
   margin-top: 69px;
@@ -130,7 +128,8 @@ nav ul li {
   margin-right: 8px;
 }
 .new-icon {
-  margin-left: -160px;
+  position: absolute;
+  margin-left: 190px;
   margin-top: 110px;
 }
 .new-icon button {
@@ -144,4 +143,31 @@ nav ul li {
 }
 .new-icon button:hover {
   transform: scale(1.1) translateX(10px);
+}
+/* about section start */
+.about {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 200px 120px 200px;
+}
+.about > h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.about > p {
+  color: white;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: 30px;
+}
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  padding-bottom: 120px;
+  padding-top: 40px;
+  border-top: 1px solid rgb(58, 57, 57);
 }
