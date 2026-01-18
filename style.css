@@ -2,6 +2,9 @@
   margin: 0;
   /* background-color: #1a0b2e; */
 }
+body {
+  background-color: #1a0b2e;
+}
 
 .inter {
   font-family: "Inter", sans-serif;
@@ -45,8 +48,20 @@ nav h1 {
   border: none;
   color: white;
 }
+.second-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00ff88;
+  padding: 12px 20px;
+  border: 2px solid #00ff88;
+  border-radius: 10000px;
+  background-color: #1a0b2e;
+  cursor: pointer;
+}
 .btn i {
   padding-left: 4px;
+  color: white;
+  background: transparent;
 }
 nav ul {
   display: flex;
@@ -58,4 +73,48 @@ nav ul li {
   list-style: none;
   color: white;
   cursor: pointer;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url(assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+.circle {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-image: url(assets/hero-circle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-left: 55px;
+  margin-top: 101px;
+}
+.circle img {
+  margin-top: 69px;
+}
+.banner h1 {
+  color: white;
+  margin-top: 40px;
+  font-size: 3.75rem;
+  font-weight: 800;
+}
+.banner p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 8px;
+}
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+.button-div i {
+  margin-right: 8px;
 }
