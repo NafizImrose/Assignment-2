@@ -63,7 +63,7 @@ nav h1 {
   cursor: pointer;
   transition: transform 0.2s;
 }
-.second-btn :hover {
+.second-btn:hover {
   transform: scale(1.1);
 }
 .btn i {
@@ -89,7 +89,7 @@ nav ul li {
   background-image: url(assets/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  width: 100%;
   padding-bottom: 101px;
 }
 .circle {
@@ -149,7 +149,7 @@ nav ul li {
   max-width: 70%;
   margin: 0 auto;
   text-align: center;
-  padding: 50px 200px 120px 200px;
+  padding: 50px 11.69% 120px 11.69%;
 }
 .about > h1 {
   font-size: 3rem;
@@ -184,4 +184,126 @@ nav ul li {
 .child-div i {
   font-size: 2.5rem;
   margin-left: 8px;
+}
+main > section {
+  background-color: #230e3d;
+  max-width: 100%;
+}
+.theme {
+  padding: 0 200px;
+  text-align: center;
+}
+.theme h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+.theme-parent {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "one  two   two"
+    "one  three three"
+    "four four  five";
+}
+
+.theme-child {
+  background-color: rgba(53, 17, 101, 0.4);
+
+  border-radius: 40px;
+  padding: 40px;
+  text-align: start;
+}
+.theme-child h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 16px;
+}
+.theme-child p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 16px;
+}
+#one {
+  padding-top: 107px;
+}
+
+@media screen and (max-width: 578px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #1a0b2e;
+    padding: 16px 0;
+  }
+  .circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-left: 55px;
+    margin-top: 101px;
+  }
+  .grid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding-bottom: 120px;
+    padding-top: 40px;
+    border-top: 1px solid rgb(58, 57, 57);
+  }
+  .about {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 5% 120px 5%;
+  }
+  .about > h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .about > p {
+    text-align: center;
+  }
+  .theme {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .theme-parent {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "one "
+      "two"
+      "three"
+      "four"
+      "five";
+  }
 }
