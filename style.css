@@ -171,3 +171,17 @@ nav ul li {
   padding-top: 40px;
   border-top: 1px solid rgb(58, 57, 57);
 }
+.child-div h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #00ff88;
+}
+.child-div p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 16px;
+}
+.child-div i {
+  font-size: 2.5rem;
+  margin-left: 8px;
+}
