@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  /* background-color: #1a0b2e; */
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.gradient-text {
+  background: linear-gradient(135deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+  background-color: #1a0b2e;
+  padding: 16px 0;
+}
+nav h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 10000px;
+  border: none;
+  color: white;
+}
+.btn i {
+  padding-left: 4px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+nav ul li {
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
