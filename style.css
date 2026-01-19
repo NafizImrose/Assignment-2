@@ -98,21 +98,34 @@ nav ul li {
   background-position: center;
   width: 100%;
   padding-bottom: 101px;
+  position: relative;
+  overflow: hidden;
 }
 .circle {
-  height: 350px;
-  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: min(70vw, 350px);
+  height: min(70vw, 350px);
   border-radius: 50%;
   background-image: url(assets/hero-circle.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
-  margin-left: 55px;
-  margin-top: 101px;
 }
+.box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 101px;
+  align-items: center;
+}
+
 .circle img {
-  margin-top: 69px;
+  width: 40%;
+  max-width: 140px;
+  height: auto;
 }
 .banner h1 {
   color: white;
@@ -414,7 +427,7 @@ main > section {
     background-color: #1a0b2e;
     padding: 16px 0;
   }
-  .circle {
+  /* .circle {
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -424,7 +437,7 @@ main > section {
     text-align: center;
     margin-left: 55px;
     margin-top: 101px;
-  }
+  } */
   .grid-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -465,6 +478,8 @@ main > section {
   .videos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
     /* gap: 5px; */
     padding-top: 10px;
   }
@@ -498,6 +513,24 @@ main > section {
     display: none;
   }
   .menu-icon {
-    display: inline;
+    display: block;
+  }
+  .new-icon {
+    top: 2%;
+    right: 15%;
+  }
+  .box {
+    width: 100%;
+    border: 4px solid white;
+  }
+  .circle {
+    border: 4px solid white;
+  }
+  .banner {
+    border: 4px solid white;
+  }
+  .circle {
+    width: min(70vw, 200px);
+    height: min(70vw, 200px);
   }
 }
