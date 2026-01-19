@@ -493,12 +493,16 @@ main > section {
     display: block;
   }
   .new-icon {
-    top: 2%;
-    right: 20%;
+    top: 17%;
+    right: 22%;
   }
   .box {
     width: 100%;
+    margin-top: 120px;
     /* border: 4px solid white; */
+  }
+  .child {
+    margin-top: -120px;
   }
 
   .circle {
@@ -526,5 +530,23 @@ main > section {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+  }
+  .banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(assets/hero-bg.png);
+    /* aspect-ratio: 16 / 9; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    padding-bottom: 101px;
+    position: relative;
+    overflow: hidden;
+    margin-top: -72px;
+  }
+  .banner p {
+    width: 97%;
   }
 }
