@@ -82,6 +82,12 @@ nav ul li {
   color: white;
   cursor: pointer;
 }
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 .banner {
   display: flex;
   justify-content: center;
@@ -455,5 +461,43 @@ main > section {
       "three"
       "four"
       "five";
+  }
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 5px; */
+    padding-top: 10px;
+  }
+  .host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  }
+  .mother-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .child-icon {
+    width: 30%;
+    margin-top: 10px;
+  }
+  .footer-banner {
+    background-size: contain;
+    background-position: top center;
+    padding: 80px 16px;
+  }
+  #sub-button {
+    display: none;
+  }
+  nav ul li {
+    display: none;
+  }
+  .menu-icon {
+    display: inline;
   }
 }
