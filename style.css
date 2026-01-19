@@ -261,6 +261,7 @@ main > section {
   background-color: #1a0b2e;
   text-align: center;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .episode h1 {
   font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
