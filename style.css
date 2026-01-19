@@ -93,8 +93,9 @@ nav ul li {
   justify-content: center;
   text-align: center;
   background-image: url(assets/hero-bg.png);
+  /* aspect-ratio: 16 / 9; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: 100%;
   padding-bottom: 101px;
@@ -427,22 +428,12 @@ main > section {
     background-color: #1a0b2e;
     padding: 16px 0;
   }
-  /* .circle {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background-image: url(assets/hero-circle.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    margin-left: 55px;
-    margin-top: 101px;
-  } */
+
   .grid-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
     padding-top: 40px;
     border-top: 1px solid rgb(58, 57, 57);
   }
@@ -481,7 +472,8 @@ main > section {
     align-items: center;
     justify-content: center;
     /* gap: 5px; */
-    padding-top: 10px;
+    padding-top: 5px;
+    column-gap: 0px;
   }
   .host {
     display: flex;
@@ -490,22 +482,7 @@ main > section {
     justify-content: center;
     text-align: justify;
   }
-  .mother-icon {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  }
-  .child-icon {
-    width: 30%;
-    margin-top: 10px;
-  }
-  .footer-banner {
-    background-size: contain;
-    background-position: top center;
-    padding: 80px 16px;
-  }
+
   #sub-button {
     display: none;
   }
@@ -517,20 +494,37 @@ main > section {
   }
   .new-icon {
     top: 2%;
-    right: 15%;
+    right: 20%;
   }
   .box {
     width: 100%;
-    border: 4px solid white;
+    /* border: 4px solid white; */
   }
-  .circle {
-    border: 4px solid white;
-  }
-  .banner {
-    border: 4px solid white;
-  }
+
   .circle {
     width: min(70vw, 200px);
     height: min(70vw, 200px);
+  }
+
+  /* lkfjksdjfskjf */
+
+  .footer-banner {
+    background-position: top center;
+    background-size: cover;
+    padding: 100px 20px 60px 20px;
+  }
+
+  .mother-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .child-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 }
