@@ -36,7 +36,7 @@ nav {
   padding: 16px 0;
 }
 nav h1 {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
   font-weight: bold;
   color: white;
 }
@@ -89,6 +89,7 @@ nav ul li {
   background-image: url(assets/hero-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   padding-bottom: 101px;
 }
@@ -99,6 +100,7 @@ nav ul li {
   background-image: url(assets/hero-circle.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
   margin-left: 55px;
   margin-top: 101px;
@@ -109,7 +111,7 @@ nav ul li {
 .banner h1 {
   color: white;
   margin-top: 40px;
-  font-size: 3.75rem;
+  font-size: clamp(1.5rem, 4vw + 1rem, 3.75rem);
   font-weight: 800;
 }
 .banner p {
@@ -152,7 +154,7 @@ nav ul li {
   padding: 50px 11.69% 120px 11.69%;
 }
 .about > h1 {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
   font-weight: bold;
   color: #ffffff;
 }
@@ -175,7 +177,7 @@ nav ul li {
   text-align: center;
 }
 .child-div h1 {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
   font-weight: 900;
   color: #00ff88;
 }
@@ -241,7 +243,7 @@ main > section {
   text-align: start;
 }
 .theme-child h3 {
-  font-size: 1.5rem;
+  font-size: clamp(0.5rem, 4vw + 1rem, 1.5rem);
   font-weight: bold;
   color: white;
   margin-top: 16px;
@@ -277,7 +279,7 @@ main > section {
   /* border: 3px solid white; */
 }
 .child-div h4 {
-  font-size: 1.5rem;
+  font-size: clamp(0.5rem, 4vw + 1rem, 1.5rem);
   font-weight: bold;
   color: white;
   margin-top: 16px;
@@ -334,13 +336,13 @@ main > section {
   text-align: start;
 }
 .host-name h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw + 1rem, 2rem);
   font-weight: bold;
   color: white;
   margin-bottom: 16px;
 }
 .host-name p {
-  font-size: 1rem;
+  font-size: clamp(0.5rem, 4vw + 1rem, 1rem);
   color: #ffffff;
 }
 .icon-child {
@@ -358,6 +360,44 @@ main > section {
   gap: 8px;
   margin-top: 16px;
 }
+.footer-banner {
+  background-image: url(assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding: 120px 0;
+  max-width: 100%;
+}
+.footer-banner h1 {
+  font-size: clamp(1.5rem, 4vw + 1rem, 5rem);
+  font-weight: bold;
+  color: white;
+  /* margin-bottom: 32px; */
+}
+.mother-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.child-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.child-icon p {
+  color: #fafafa;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.copyright {
+  color: #fafafa;
+  margin-top: 32px;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 578px) {
   nav {
     display: flex;
